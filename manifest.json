@@ -1,0 +1,12 @@
+{
+  "name": "GCZ Accelerator",
+  "manifest_version": 2,
+  "version": "0.1",
+  "description": "Makin your life just a tiny bit better",
+  "content_scripts": [
+    {
+      "matches": ["https://codeship.com/projects/*/builds/*"],
+      "js": ["jquery-2.1.0.js", "jquery-regex-plugin.js", "codeshipHelper.js"]
+    }
+  ]
+}
